@@ -3,23 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/Fragment_Inicio">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/Fragment_Inicio"
         android:name="ricardo.pocasangre.emulador_20230620_ricardo.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="Inicio"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/Fragment_Perfil"
         android:name="ricardo.pocasangre.emulador_20230620_ricardo.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="Perfil"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="ricardo.pocasangre.emulador_20230620_ricardo.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/fragmen_Contactanos"
+        android:name="ricardo.pocasangre.emulador_20230620_ricardo.Fragmen_Contactanos"
+        android:label="Contactanos"
+        tools:layout="@layout/fragment_contactanos" />
+    <fragment
+        android:id="@+id/fragment_Informacion"
+        android:name="ricardo.pocasangre.emulador_20230620_ricardo.Fragment_Informacion"
+        android:label="Información"
+        tools:layout="@layout/fragment_informacion" />
 </navigation>

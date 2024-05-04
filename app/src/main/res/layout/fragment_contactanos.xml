@@ -2,12 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context=".Fragmen_Contactanos">
+
+    <!-- TODO: Update blank fragment layout -->
 
     <Button
-        android:id="@+id/brnNombre"
+        android:id="@+id/btnCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Toca aqui"
@@ -15,17 +18,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.878" />
+        app:layout_constraintVertical_bias="0.699" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="306dp"
-        android:layout_height="154dp"
-        android:text="Presione el boton para ver el nombre del estudiante"
+        android:id="@+id/textView2"
+        android:layout_width="365dp"
+        android:layout_height="95dp"
+        android:text="Podra ver el contacto al presionar el boton"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/brnNombre"
+        app:layout_constraintBottom_toTopOf="@+id/btnCorreo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,8 @@
 package ricardo.pocasangre.emulador_20230620_ricardo
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -24,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
+        val appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.Fragment_Inicio, R.id.Fragment_Perfil, R.id.fragment_Informacion, R.id.fragmen_Contactanos))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
     }
 }
+
